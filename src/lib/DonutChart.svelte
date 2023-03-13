@@ -21,14 +21,9 @@
   
     // all variables related to dimensions
   const length = 400;
-  const marginLength = 30;
+  const margin = 30;
   const categoryHeight = 20;
-  const margin = {
-      "top": marginLength,
-      "left": marginLength,
-      "bottom": marginLength,
-      "right": marginLength
-  }
+
   //prep data
   const sumSortData = (data) => {
       //summarise data & calculate ratio & raw count for each category
@@ -74,10 +69,10 @@
 </script>
 
 <svg
-  width={length + margin.left + margin.right}
-  height={length + margin.top + margin.bottom}
+  width={length + margin*2}
+  height={length + margin*2}
 >
-  <g transform="translate({margin.left + length / 2},{margin.top + length / 2})">
+  <g transform="translate({margin + length / 2},{margin + length / 2})">
     <DonutArc
       data={pieData}
       {colorScale}
