@@ -87,7 +87,7 @@
       data={pieData}
     />
   </g>
-  <g transform="translate({(length)/2-40},{length/2-20})"> <!-- lazy to calculate so the centering is manual  -->
+  <g transform="translate({length/2-40},{length/2-20})"> <!-- lazy to calculate so the centering is manual  -->
     <Legend
       data={dataSummed}
       {categoryHeight}
