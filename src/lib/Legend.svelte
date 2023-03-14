@@ -1,7 +1,8 @@
 <script>
     export let data;
-    export let categoryHeight;
     export let colorScale;
+
+    const categoryHeight = 20;
 </script>
 
 {#each data as d,i}

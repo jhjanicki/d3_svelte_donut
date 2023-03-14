@@ -22,7 +22,6 @@
     // all variables related to dimensions
   const length = 400;
   const margin = 30;
-  const categoryHeight = 20;
 
   //prep data
   const sumSortData = (data) => {
@@ -85,7 +84,6 @@
   <g transform="translate({length/2-40},{length/2-20})"> <!-- lazy to calculate so the centering is manual  -->
     <Legend
       data={dataSummed}
-      {categoryHeight}
       {colorScale}
     ></Legend>
   </g>
